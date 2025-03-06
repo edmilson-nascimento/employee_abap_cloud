@@ -1,4 +1,4 @@
-# employee_abap_cloud
+# Employee | ABAP Cloud
  ABAP Cloud | Atividade Employee
 
 [![GitHub forks](https://img.shields.io/github/forks/edmilson-nascimento/employee_abap_cloud?style=social)](https://github.com/edmilson-nascimento/employee_abap_cloud/network/members)
@@ -16,8 +16,6 @@ Sistema de Funcionários
 
 ### Descrição do Desafio
 Você foi contratado para desenvolver um sistema de gerenciamento de funcionários. O objetivo é criar um conjunto de classes em ABAP OO que simulem a estrutura de uma empresa com diferentes tipos de funcionários. O sistema deve permitir o gerenciamento e visualização dos funcionários, seus dados e seus salários, aplicando conceitos de herança, polimorfismo e encapsulamento. 
-
-  
 
 ### Requisitos
 Criar uma Classe Base chamada `ZCL_EMPLOYEE`
