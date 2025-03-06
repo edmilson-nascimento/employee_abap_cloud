@@ -1,9 +1,6 @@
 # employee_abap_cloud
  ABAP Cloud | Atividade Employee
 
-
-# LearningABAP
-
 [![GitHub forks](https://img.shields.io/github/forks/edmilson-nascimento/employee_abap_cloud?style=social)](https://github.com/edmilson-nascimento/employee_abap_cloud/network/members)
 [![GitHub stars](https://img.shields.io/github/stars/edmilson-nascimento/employee_abap_cloud?style=social)](https://github.com/edmilson-nascimento/employee_abap_cloud/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/edmilson-nascimento/employee_abap_cloud)](https://github.com/edmilson-nascimento/employee_abap_cloud/issues)
@@ -14,11 +11,36 @@
 ![UI5](https://img.shields.io/badge/UI5-0A9EDC?style=flat&logo=sap&logoColor=white)
 ![SAP BTP](https://img.shields.io/badge/SAP%20BTP-0A9EDC?style=flat&logo=sap&logoColor=white)
 
-"Se vi mais longe, foi por estar sobre os ombros de gigantes"
-
 ## Sobre
+Sistema de Funcionários
 
-Este repositório é um fork de outro repositório e tem como objetivo armazenar dados e aprendizados sobre ABAP e ABAP Cloud.
+### Descrição do Desafio
+Você foi contratado para desenvolver um sistema de gerenciamento de funcionários. O objetivo é criar um conjunto de classes em ABAP OO que simulem a estrutura de uma empresa com diferentes tipos de funcionários. O sistema deve permitir o gerenciamento e visualização dos funcionários, seus dados e seus salários, aplicando conceitos de herança, polimorfismo e encapsulamento. 
+
+  
+
+### Requisitos
+Criar uma Classe Base chamada `ZCL_EMPLOYEE`
+- Essa classe deve representar um funcionário genérico e conter atributos privados como nome, idade e salário.
+- Deve haver métodos públicos para definir (set) e obter (get) esses valores. 
+- O método `calculate_salary` será abstrato e deverá ser implementado pelas subclasses. 
+
+### Criar Subclasses para diferentes tipos de Funcionários: 
+
+- `ZCL_FULLTIME_EMPLOYEE` Representa um funcionário que trabalha em tempo integral. O cálculo do salário é o valor fixo do salário. 
+- `ZCL_PARTTIME_EMPLOYEE` Representa um funcionário que trabalha em meio período. O salário deve ser calculado com base nas horas trabalhadas e na taxa por hora. 
+- `ZCL_CONTRACTOR_EMPLOYEE` Representa um contratado. O salário é calculado com base na taxa diária e na quantidade de dias trabalhados. 
+
+### Aplicar Herança
+As subclasses devem herdar da classe `ZCL_EMPLOYEE`. 
+Cada subclasse deve implementar seu próprio método calculate_salary, que calculará o salário conforme a lógica específica. 
+
+### Aplicar Polimorfismo
+Crie uma classe `ZCL_EMPLOYEE_MANAGER` que gerencie uma lista de funcionários e permita calcular o salário de todos os funcionários de forma genérica, sem saber de antemão o tipo específico de funcionário (full-time, part-time ou contractor). 
+
+### Encapsulamento
+Todos os atributos (nome, idade, salário, horas/dias trabalhados) devem ser privados. 
+Deve haver métodos de acesso público para definir e obter esses valores, garantindo a integridade dos dados. 
 
 ## Recursos
 
